@@ -1,0 +1,38 @@
+[user]
+	name = Karl Thompson
+	email = karlthompsonnu@gmail.com
+[core]
+	autocrlf = true
+	excludesfile = ~/.gitignore_global
+[push]
+	default = simple
+[diff]
+	tool = p4merge
+	renames = copies
+[difftool "p4merge"]
+	cmd = "p4merge.exe $LOCAL $REMOTE"
+[merge]
+	tool = p4merge
+	keepBackup = false
+[mergetool "p4merge"]
+	cmd = "p4merge.exe $BASE $LOCAL $REMOTE $MERGED"
+	trustExitCode = true
+	keepBackup = false
+[alias]
+#double commands
+	acom = !git add . && git commit
+	acomam = !git add . && git commit --amend
+	febase = !git fall && git rom
+#single commands
+	amend = commit --amend
+	co = checkout
+	comma = commit --all
+	fall = fetch --all
+	kall = !gitk --all &
+	mt = mergetool
+	newb = checkout -b
+	newp = push --set-upstream
+	pr = pull --rebase
+	radd = remote add
+	rom = rebase origin/master
+	romi = rebase origin/master -i
