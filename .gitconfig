@@ -27,7 +27,7 @@
 	amend = commit --amend
 	co = checkout
 	comma = commit --all
-	fall = fetch --all
+	fall = fetch --all -p
 	kall = !gitk --all &
 	mt = mergetool
 	newb = checkout -b
@@ -36,3 +36,4 @@
 	radd = remote add
 	rom = rebase origin/master
 	romi = rebase origin/master -i
+	tree = log --decorate --oneline
