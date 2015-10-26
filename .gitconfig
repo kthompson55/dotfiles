@@ -37,4 +37,4 @@
 	radd = remote add
 	rom = rebase origin/master
 	romi = rebase origin/master -i
-	tree = log --decorate --oneline
+	tree = log --decorate --oneline --graph --all
