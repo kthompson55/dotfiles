@@ -27,6 +27,7 @@
 	amend = commit --amend
 	co = checkout
 	comma = commit --all
+	delb = branch -d
 	fall = fetch --all -p
 	kall = !gitk --all &
 	mt = mergetool
